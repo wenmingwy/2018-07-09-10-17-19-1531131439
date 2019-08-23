@@ -15,7 +15,7 @@ public class Student extends Person{
 	public void setKlass(int klass) {
 		this.klass = klass;
 	}
-//重写注解
+
 	@Override
 	public String introduce() {
 		return String.format("My name is %s. I am %d years old. I am a Student. I am at Class %d.", this.getName(), this.getAge(), this.getKlass());

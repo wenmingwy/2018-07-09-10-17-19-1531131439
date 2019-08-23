@@ -20,7 +20,8 @@ public class Person {
 		super();
 		this.name = name;
 		this.age = age;
-	}	
+	}
+	
 	public String introduce() {
 		return String.format("My name is %s. I am %d years old.", this.name, this.age);
 	}

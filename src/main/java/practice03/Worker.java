@@ -1,11 +1,18 @@
 package practice03;
+import practice03.Person;
+
 public class Worker extends Person{
-	public Worker(String name, int age) {
-		super(name, age);
+	private String Worker = "Worker";
+	private String job = "job";
+
+	public Worker(String name , int age) {
+		super(name,age);
 	}
-	//重写注解
+
 	@Override
 	public String introduce() {
-		return String.format("I am a Worker. I have a job.");
+		 return String.format("I am a %s. I have a %s.", Worker,job);
 	}
 }
+
+ 
